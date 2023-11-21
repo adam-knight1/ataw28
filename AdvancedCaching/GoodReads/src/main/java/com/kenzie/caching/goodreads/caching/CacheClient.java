@@ -36,13 +36,13 @@ public class CacheClient {
         }
     }
 
-    public boolean invalidate(String key) {
+    public void invalidate(String key) {
         if (key == null) {
             throw new IllegalArgumentException("Key is null");
         }
 
         try (Jedis jedis = pool.getResource()) {
-            return jedis.del(key) > 0;
+            jedis.del(key);
         }
     }
 
