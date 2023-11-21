@@ -10,10 +10,14 @@ import javax.inject.Inject;
 public class CachingReadingLogDao implements ReadingLogDao {
 
     private CacheClient cacheClient;
+    private final ReadingLogDao nonCachingReadingLogDao;
 
     @Inject
-    public CachingReadingLogDao(CacheClient cacheClient) {
+    public CachingReadingLogDao(CacheClient cacheClient,ReadingLogDao nonCachingReadingLogDao) {
         this.cacheClient = cacheClient;
+        this.nonCachingReadingLogDao = nonCachingReadingLogDao;
+
+
     }
 
     @Override
