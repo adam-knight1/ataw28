@@ -48,4 +48,9 @@ public class CachingLeaderboardDao {
             }
         }
     }
+
+    public void invalidateScore(String username) {
+        cache.invalidate(username);
+    }
+
 }

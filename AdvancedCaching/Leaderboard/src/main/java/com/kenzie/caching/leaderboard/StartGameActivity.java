@@ -28,6 +28,7 @@ public class StartGameActivity {
      * @return The result of starting the game.
      */
     public StartGameResult enact(StartGameRequest request) {
+        cachingLeaderboardDao.invalidateScore(request.getUsername());
         gameServer.startGame(request.getUsername());
         return new StartGameResult();
     }
