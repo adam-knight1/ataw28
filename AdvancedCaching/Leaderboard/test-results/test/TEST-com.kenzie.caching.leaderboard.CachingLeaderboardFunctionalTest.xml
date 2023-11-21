@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kenzie.caching.leaderboard.CachingLeaderboardFunctionalTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-11-21T05:20:33" hostname="adamlaptop.local" time="0.379">
+<testsuite name="com.kenzie.caching.leaderboard.CachingLeaderboardFunctionalTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-11-21T06:18:21" hostname="adamlaptop.local" time="0.228">
   <properties/>
-  <testcase name="getScore_UsesCache()" classname="com.kenzie.caching.leaderboard.CachingLeaderboardFunctionalTest" time="0.379">
+  <testcase name="getScore_UsesCache()" classname="com.kenzie.caching.leaderboard.CachingLeaderboardFunctionalTest" time="0.228">
     <failure message="redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool" type="redis.clients.jedis.exceptions.JedisConnectionException">redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
 	at redis.clients.jedis.util.Pool.getResource(Pool.java:59)
 	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:234)

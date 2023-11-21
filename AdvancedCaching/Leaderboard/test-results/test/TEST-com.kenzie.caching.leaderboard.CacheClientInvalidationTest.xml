@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kenzie.caching.leaderboard.CacheClientInvalidationTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2023-11-21T05:38:47" hostname="adamlaptop.local" time="4.507">
+<testsuite name="com.kenzie.caching.leaderboard.CacheClientInvalidationTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2023-11-21T06:17:26" hostname="adamlaptop.local" time="2.986">
   <properties/>
-  <testcase name="invalidate_cacheKeyDoesNotExist_returnFalse()" classname="com.kenzie.caching.leaderboard.CacheClientInvalidationTest" time="4.446"/>
+  <testcase name="invalidate_cacheKeyDoesNotExist_returnFalse()" classname="com.kenzie.caching.leaderboard.CacheClientInvalidationTest" time="2.917"/>
   <testcase name="setValue_givenCacheEntry_storesInRedis()" classname="com.kenzie.caching.leaderboard.CacheClientInvalidationTest" time="0.011"/>
-  <testcase name="invalidate_cacheKeyExists_removeFromCache()" classname="com.kenzie.caching.leaderboard.CacheClientInvalidationTest" time="0.007"/>
-  <testcase name="getValue_cacheMiss_returnsEmptyOptional()" classname="com.kenzie.caching.leaderboard.CacheClientInvalidationTest" time="0.001"/>
-  <testcase name="getValue_nullKey_throwsIllegalArgumentException()" classname="com.kenzie.caching.leaderboard.CacheClientInvalidationTest" time="0.008"/>
-  <testcase name="getValue_cacheHit_getsData()" classname="com.kenzie.caching.leaderboard.CacheClientInvalidationTest" time="0.013"/>
+  <testcase name="invalidate_cacheKeyExists_removeFromCache()" classname="com.kenzie.caching.leaderboard.CacheClientInvalidationTest" time="0.006"/>
+  <testcase name="getValue_cacheMiss_returnsEmptyOptional()" classname="com.kenzie.caching.leaderboard.CacheClientInvalidationTest" time="0.004"/>
+  <testcase name="getValue_nullKey_throwsIllegalArgumentException()" classname="com.kenzie.caching.leaderboard.CacheClientInvalidationTest" time="0.01"/>
+  <testcase name="getValue_cacheHit_getsData()" classname="com.kenzie.caching.leaderboard.CacheClientInvalidationTest" time="0.017"/>
   <testcase name="invalidate_nullKey_throwsIllegalArgumentException()" classname="com.kenzie.caching.leaderboard.CacheClientInvalidationTest" time="0.002"/>
-  <testcase name="setValue_nullKey_throwsIllegalArgumentException()" classname="com.kenzie.caching.leaderboard.CacheClientInvalidationTest" time="0.001"/>
+  <testcase name="setValue_nullKey_throwsIllegalArgumentException()" classname="com.kenzie.caching.leaderboard.CacheClientInvalidationTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

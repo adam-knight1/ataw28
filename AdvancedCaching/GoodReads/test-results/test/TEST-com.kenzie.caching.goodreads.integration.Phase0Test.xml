@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kenzie.caching.goodreads.integration.Phase0Test" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-11-21T06:31:30" hostname="adamlaptop.local" time="1.271">
+  <properties/>
+  <testcase name="[1] Caching-ReadingGoals" classname="com.kenzie.caching.goodreads.integration.Phase0Test" time="1.004"/>
+  <testcase name="[2] Caching-ReadingLogs" classname="com.kenzie.caching.goodreads.integration.Phase0Test" time="0.238"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Nov 21, 2023 1:31:30 AM com.amazonaws.profile.path.cred.CredentialsLegacyConfigLocationProvider getLocation
+WARNING: Found the legacy config profiles file at [/Users/adamknight/.aws/config]. Please move it to the latest default location [~/.aws/credentials].
+]]></system-err>
+</testsuite>
