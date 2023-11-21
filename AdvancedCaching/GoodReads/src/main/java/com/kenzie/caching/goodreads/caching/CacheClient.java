@@ -8,6 +8,5 @@ public class CacheClient {
     @Inject
     public CacheClient(JedisPool jedisPool) {
 
-
     }
 }
