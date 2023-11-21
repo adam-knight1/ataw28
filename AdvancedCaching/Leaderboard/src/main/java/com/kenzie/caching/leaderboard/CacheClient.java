@@ -67,6 +67,9 @@ public class CacheClient {
      * @return true on invalidation, false if key does not exist in cache
      */
     public boolean invalidate(String key) {
+        if (key == null) {
+            throw new IllegalArgumentException("Key is null");
+        }
         try (Jedis jedis = pool.getResource()) {
             return jedis.del(key) > 0;
         }

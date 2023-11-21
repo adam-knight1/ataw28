@@ -3,6 +3,7 @@ package com.kenzie.caching.leaderboard;
 import com.kenzie.caching.leaderboard.resources.GameServer;
 import com.kenzie.caching.leaderboard.resources.StartGameRequest;
 import com.kenzie.caching.leaderboard.resources.StartGameResult;
+import redis.clients.jedis.JedisPool;
 
 import javax.inject.Inject;
 
@@ -13,6 +14,7 @@ public class StartGameActivity {
 
     private final GameServer gameServer;
     private final CachingLeaderboardDao cachingLeaderboardDao;
+
 
     @Inject
     public StartGameActivity(GameServer gameServer, CachingLeaderboardDao cachingLeaderboardDao) {
@@ -27,7 +29,6 @@ public class StartGameActivity {
      */
     public StartGameResult enact(StartGameRequest request) {
         gameServer.startGame(request.getUsername());
-        cache
         return new StartGameResult();
     }
 }
