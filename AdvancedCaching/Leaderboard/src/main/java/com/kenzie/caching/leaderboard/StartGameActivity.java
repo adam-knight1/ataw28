@@ -27,6 +27,7 @@ public class StartGameActivity {
      */
     public StartGameResult enact(StartGameRequest request) {
         gameServer.startGame(request.getUsername());
+        cache
         return new StartGameResult();
     }
 }

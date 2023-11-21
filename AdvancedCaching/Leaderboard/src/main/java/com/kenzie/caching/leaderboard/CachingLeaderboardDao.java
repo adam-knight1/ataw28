@@ -35,19 +35,16 @@ public class CachingLeaderboardDao {
     public long getHighScore(String username) {
         Optional<String> cachedScore = cache.getValue(username);
         if (cachedScore.isPresent()) {
-            return Long.parseLong(cachedScore.get()); //string??
+            return Long.parseLong(cachedScore.get()); //string?? ParseLong
         } else {
             Entry entry = dataSource.getEntry(username);
             if (entry != null) {
                 long score = entry.getScore();
                 cache.setValue(username, TTL, String.valueOf(score));
                 return score;
-
             } else {
                 System.out.println("user not found");
                 return 0;
-
-
             }
         }
     }
