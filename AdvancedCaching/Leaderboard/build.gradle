@@ -6,13 +6,10 @@ plugins {
 
 repositories {
     maven {
-        url = uri("https://maven.pkg.github.com/KenzieAcademy-SoftwareEngineering/kenzie-java-test-infrastructure")
-        credentials {
-            username = "kenzie-gradle"
-            password = "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"
+        //obscuring for push to GH
         }
     }
-}
+
 
 dependencies {
     implementation group: 'org.reflections', name: 'reflections', version: '0.10.2'
