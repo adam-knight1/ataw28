@@ -44,6 +44,7 @@ public class CachingReadingLogDao implements ReadingLogDao {
         } else {
             int booksReadCount = nonCachingReadingLogDao.getBooksReadInYear(userId, year);
             cacheClient.setValue(cacheKey, booksReadCount);
+
             return booksReadCount;
         }
     }
